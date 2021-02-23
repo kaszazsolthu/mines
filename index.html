@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hu">
+	<head>
+		<meta charset="UTF-8">
+		<title>Lékkereső</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="KASZA Zsolt">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/base.css?v=1">
+		<script src="js/base.js?v=1" defer></script>
+		<link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=">
+	</head>
+	<body>
+        <div id="container">
+            <p class="bombtext">Lékek a közelben: <span id="bombs"></span></p>
+			<div id="game">
+                <div id="player"></div>
+
+				<div id="gameover">
+					<h2>Télapó vízbe esett!</h2>
+					<a href="#" onclick="init();">Új játék</a>
+                </div>
+				<div id="win">
+                    <h2>Gratulálok, sikerült Télapót átjuttatni a tavon!</h2>
+                    <p>Összesen <span id="steps"></span> lépést tettél meg.</p>
+					<a href="#" onclick="init();">Új játék</a>
+				</div>
+            </div>
+            <p>
+				A Télapót kell irányítanod. Használhatod a nyíl, vagy
+				a wasd billentyűket a mozgatáshoz. A cél, hogy Télapó az
+                alsó sávból jusson át a felsőbe, a befagyott tavon keresztül.
+                Az alsó	és felső sávokat kivéve	lékek rejtőznek mindenhol, véletlenszerűen
+				elszórva – ha a Télapó vízbe esik, vége a játéknak.
+			</p>
+			<p>
+				A körülötted lévő lékek száma fent ki van írva. A fölötted,
+				alattad, melletted és átlósan elhelyezkedő lékek is bele vannak
+				számolva.
+			</p>
+			<p>
+				Amelyik négyzeről sejted, hogy lék lehet, rákattintva meg tudod
+				jelölni (mégegyszer rákattintva a jelölés levehető).
+			</p>
+        </div>
+	</body>
+</html>

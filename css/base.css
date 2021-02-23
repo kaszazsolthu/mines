@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#container {
+    margin: 0px auto;
+    width: 802px;
+}
+
+
+p.bombtext {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 1px 1px 1px #494949, -1px 1px 1px #494949, 1px -1px 1px #494949, -1px -1px 1px #494949;
+    /*filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.5));*/
+}
+
+#gameover, #win {
+    top: 100px;
+    left: 40px;
+    right: 40px;
+    position: absolute;
+    display: none;
+    text-align: center;
+    padding-bottom: 40px;
+    background-color: rgba(255, 255, 255, 0.6);
+/*    background-color: white;*/
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+a {
+    color: black;
+}
+
+#game {
+    width: 800px;
+    height: 450px;
+    border: 1px solid #000000;
+    display: grid;
+    grid-template-columns: repeat(32, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    position: relative;
+    background-image: url('../images/snow-bg.jpg');
+    background-repeat: no-repeat;
+}
+
+#player {
+    position: absolute;
+    width: 25px;
+	height: 25px;
+    background-image: url('../images/santa.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+	display: none;
+}
+
+.gblank {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.marked {
+    background-image: url('../images/candy-cane.png');
+    background-size: 100%;
+}
+
+.marked.cc1 {
+    background-image: url('../images/candy-cane-1.png');
+}
+
+.marked.cc2 {
+    background-image: url('../images/candy-cane-2.png');
+}
+
+.hole {
+    /*background-color: rgba(0, 0, 0, 0.3);*/
+    background-image: url('../images/hole.png');
+    background-size: 100%;
+}
